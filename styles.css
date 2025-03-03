@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+section {
+    padding: 20px;
+}
+.project {
+    background-color: #2c2c2c;
+    padding: 15px;
+    margin: 10px 0;
+}
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    border: 1px solid #333333;
+}
+footer {
+    background-color: #1f1f1f;
+    text-align: center;
+    padding: 10px;
+}
+img.profile-pic {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+.skills {
+    background-color: #2c2c2c;
+    padding: 15px;
+    margin: 10px 0;
+}
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+.skills ul li {
+    margin: 5px 0;
+}
+.social-links {
+    text-align: center;
+    margin: 20px 0;
+}
+.social-links a {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.counter {
+    text-align: center;
+    margin: 20px 0;
+}
+.project-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    background: linear-gradient(135deg, #00f260, #0575e6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.stat {
+    background-color: #363636;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 20px;
+    margin: 0 10px;
+    width: 150px;
+    transition: background-color 0.3s;
+}
+
+.stat:hover {
+    background-color: #3b3b3b;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2em;
+}
+
+p {
+    margin: 5px 0 0;
+}
+
+.about {
+    margin-top: 20px;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+.typing-container {
+    font-size: 24px;
+    font-weight: bold;
+    display: inline-block;
+}
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 24px;
+    background-color: black;
+    animation: blink 0.8s step-start infinite;
+}
+@keyframes blink {
+    50% {
+        background-color: transparent;
+    }
+}
+#wellcome{
+    font-size: 13px;
+    font-weight: bold;
+    display: inline-block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
