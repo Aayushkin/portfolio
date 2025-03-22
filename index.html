@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website | Mr.Aayush Bhandari</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="my.jpg" type="image/jpg" sizes="16x16">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background: linear-gradient(to right, #4a90e2, #145da0);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #home {
+            padding: 50px;
+            background: #e3f2fd;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #4a90e2;
+            margin: 20px auto;
+            display: block;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        section {
+            padding: 40px;
+        }
+        .project {
+            background: white;
+            padding: 20px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        form input, form textarea {
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #4a90e2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #145da0;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mr.Aayush Bhandari | Aayush-tech07</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="stats">
+        <div class="stat">
+            <h2>13+</h2>
+            <p>Projects</p>
+        </div>
+        <div class="stat">
+            <h2>~8+</h2>
+            <p>Clients</p>
+        </div>
+        <div class="stat">
+            <h2>~1,000+</h2>
+            <p>Commits</p>
+        </div>
+        <div class="stat">
+            <h2>2</h2>
+            <p>Years of Experience</p>
+        </div>
+    </section>
+    <section id="home">
+        <h2>Welcome to My Portfolio</h2>
+        <img src="my.jpg" alt="Your Photo" class="profile-pic">
+        <p id="wellcome">Welcome to my portfolio! I'm Aayush Bhandari, a passionate web developer and tech enthusiast dedicated to crafting innovative digital solutions.</p>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="typing-container">
+            <span id="typing-text">I am a <span class="cursor"></span></span>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <a href="https://aayush-techo7.netlify.app/" target="_blank">
+                <img src="hello.jpg" alt="Aayush-Tech07 Toggle Feature Logo" class="project-logo" sizes="16x16">
+            </a>
+            <h3>Aayush-Tech07 Toggle Feature</h3>
+            <p>This project showcases a JavaScript toggle functionality that allows users to switch between different states or views on a webpage. It's a versatile component that can be integrated into various web applications to improve user experience by providing interactive and dynamic content display.</p>
+        </div>
+        <div class="project">
+            <a href="https://aayush-tech07.netlify.app/" target="_blank">
+                <img src="download.png" alt="Best Calculator Logo" class="project-logo">
+            </a>
+            <h3>Best Calculator</h3>
+            <p>Best Calculator is a user-friendly web-based calculator designed to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. The interface is intuitive, featuring clearly labeled buttons for digits and operations, along with an 'AC' (All Clear) button to reset the calculation. The calculator also includes an '=' button to compute the result.</p>
+        </div>
+        <div class="project">
+            <a href="https://aayush-tech7.netlify.app/" target="_blank">
+                <img src="logo.png" alt="Aayush-Tech07 Typing Speed Test" class="project-logo" sizes="16x16">
+            </a>
+            <h3>Typing Speed test</h3>
+            <p>The Typing Speed Test on Aayush-Tech07 offers users a fun and engaging way to measure their typing speed and accuracy. Whether you are a beginner or an experienced typist, this test provides real-time feedback on your words-per-minute (WPM) and typing accuracy.</p>
+        </div>
+    </section>
+    
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form" action="https://formspree.io/f/bhandariaayush07@gmail.com" method="POST" onsubmit="return validateForm()">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required>
+            <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; 2025 Mr. Aayush Bhandari. All Rights Reserved.</p>
+        <div>
+            <a href="http://loanalculator01.blogspot.com/" target="_blank">
+                <i class="fab fa-blogger"></i> Blogger
+            </a> |
+            <a href="https://github.com/Aayushkin" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a> |
+            <a href="https://m.facebook.com/people/Aayush-tech07/100091516755478/" target="_blank">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
